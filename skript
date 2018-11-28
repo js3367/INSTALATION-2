@@ -1,0 +1,15 @@
+#!/bin/sh
+
+echo "skapar Chef"
+sudo usseradd -m -k /home/Jackieboy/skeleton_dir/ Chef
+sudo passwd Chef
+sudo usermod -G sudo Chef
+
+echo "skapar Svante"
+sudo usseradd -m -k /home/Jackieboy/skeleton_dir2/ Svante
+sudo passwd Svante
+
+echo "skapar Staffam"
+sudo usseradd -m -k /home/Jackieboy/skeleton_dir2/ Staffan
+sudo passwd Staffan
+
